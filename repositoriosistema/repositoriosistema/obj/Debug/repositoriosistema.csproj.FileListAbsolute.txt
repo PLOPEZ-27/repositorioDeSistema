@@ -1,0 +1,13 @@
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\bin\Debug\repositoriosistema.exe.config
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\bin\Debug\repositoriosistema.exe
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\bin\Debug\repositoriosistema.pdb
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.csproj.AssemblyReference.cache
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.Form1.resources
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.Properties.Resources.resources
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.csproj.GenerateResource.cache
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.csproj.CoreCompileInputs.cache
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.exe
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.pdb
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.frmClientes.resources
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.FrmEmpleados.resources
+C:\Users\bryan\OneDrive\Escritorio\Entornos visuales GitHub\repositorio de 17626\repositorioDeSistema\repositoriosistema\repositoriosistema\obj\Debug\repositoriosistema.FrmProducto.resources
