@@ -1,8 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Google.Protobuf.WellKnownTypes;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,43 +22,62 @@ namespace repositoriosistema
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try
+            string error = "";
+            if (txtNombre.Text == string.Empty)
+                error += "el campo de Nombre no puede estar vacio";
+            else if (txtNombre.Text.Length < 3)
+                error += "\nel campo Nombre tiene que tener 3 caracteres minimo";
+            if (txtTelefono.Text == string.Empty)
+                error += "\nel campo de Telefono no puede estar vacio";
+            if (txtCorreoElectro.Text == string.Empty)
+                error += "\nel campo de Correo Electronico no puede estar vacio";
+            if (txtDireccion.Text == string.Empty)
+                error += "\nel campo de Direccion no puede estar vacio";
+            if (error == "")
             {
-                Conexion conexion = new Conexion();
-                using (MySqlConnection conn = conexion.ObtenerConexion())
-                {
-                    conn.Open();
-                    string query = "INSERT INTO clientes (nombre, correo, telefono, direccion) VALUES (@nombre, @correo, @telefono, @direccion)";
-                    using (MySqlCommand cmd = new MySqlCommand (query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@nombre", txtNombre.Text);
-                        cmd.Parameters.AddWithValue("@correo", txtCorreoElectro.Text);
-                        cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                        cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text);
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Cliente guardado exitosamente");
-                            txtNombre.Clear();
-                            txtCorreoElectro.Clear();
-                            txtTelefono.Clear();
-                            txtDireccion.Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se pudo guardar el cliente");
-                        }
 
+                try
+                {
+
+                    Conexion conexion = new Conexion();
+                    using (MySqlConnection conn = conexion.ObtenerConexion())
+                    {
+                        conn.Open();
+                        string query = "INSERT INTO clientes (nombre, correo, telefono, direccion) VALUES (@nombre, @correo, @telefono, @direccion)";
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@nombre", txtNombre.Text);
+                            cmd.Parameters.AddWithValue("@correo", txtCorreoElectro.Text);
+                            cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                            cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text);
+                            int rowsAffected = cmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Cliente guardado exitosamente");
+                                txtNombre.Clear();
+                                txtCorreoElectro.Clear();
+                                txtTelefono.Clear();
+                                txtDireccion.Clear();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pudo guardar el cliente");
+                            }
+
+                        }
                     }
+
+
                 }
-                    
-                
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            
+            else
+                    MessageBox.Show(error, "Error");
+           
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
