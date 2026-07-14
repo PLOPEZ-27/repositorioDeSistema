@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,8 +19,28 @@
       "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|c:\\users\\bryan\\onedrive\\escritorio\\entornos visuales github\\repositorio de 17626\\repositoriodesistema\\repositoriosistema\\repositoriosistema\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668E484F-EB18-4020-9CA3-B8C17F9EB4DC}|repositoriosistema\\repositoriosistema.csproj|solutionrelative:repositoriosistema\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +55,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmCategoria.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\FrmCategoria.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmCategoria.cs",
+              "RelativeToolTip": "repositoriosistema\\FrmCategoria.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDUAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:42:43.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmCategoria.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\FrmCategoria.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "repositoriosistema\\FrmCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:29:22.429Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Form1.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\Form1.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Form1.cs",
+              "RelativeToolTip": "repositoriosistema\\Form1.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAawD8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:30:04.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Form1.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\Form1.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "repositoriosistema\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:29:34.745Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FrmProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmProducto.cs",
               "RelativeDocumentMoniker": "repositoriosistema\\FrmProducto.cs",
@@ -42,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FrmEmpleados.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmEmpleados.cs",
               "RelativeDocumentMoniker": "repositoriosistema\\FrmEmpleados.cs",
@@ -54,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmClientes.cs",
               "RelativeDocumentMoniker": "repositoriosistema\\frmClientes.cs",
@@ -66,15 +140,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmClientes.cs",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmClientes.cs",
               "RelativeDocumentMoniker": "repositoriosistema\\frmClientes.cs",
               "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\frmClientes.cs",
               "RelativeToolTip": "repositoriosistema\\frmClientes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-13T16:02:07.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmProveedores.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\FrmProveedores.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\FrmProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "repositoriosistema\\FrmProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:30:35.003Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Conexion.cs",
+              "RelativeDocumentMoniker": "repositoriosistema\\Conexion.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Escritorio\\Entornos visuales GitHub\\repositorio de 17626\\repositorioDeSistema\\repositoriosistema\\repositoriosistema\\Conexion.cs",
+              "RelativeToolTip": "repositoriosistema\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T15:35:13.126Z",
               "EditorCaption": ""
             }
           ]

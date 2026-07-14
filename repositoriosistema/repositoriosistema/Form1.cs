@@ -53,5 +53,15 @@ namespace repositoriosistema
         {
             AbrirFormulario(new FrmEmpleados());
         }
+
+        private void cATEGORIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmCategoria());
+        }
+
+        private void pROVEEDORESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmProveedores());
+        }
     }
 }
