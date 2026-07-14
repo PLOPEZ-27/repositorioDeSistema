@@ -30,8 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbErrorDireccion = new System.Windows.Forms.Label();
+            this.lbErrorNombre = new System.Windows.Forms.Label();
+            this.lbErrorCorreo = new System.Windows.Forms.Label();
+            this.lbErrortelefono = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -69,8 +71,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.lbErrorDireccion);
+            this.panel1.Controls.Add(this.lbErrorNombre);
+            this.panel1.Controls.Add(this.lbErrorCorreo);
+            this.panel1.Controls.Add(this.lbErrortelefono);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -89,26 +93,47 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(701, 637);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label10
+            // lbErrorDireccion
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(126, 313);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 16);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "(Debe contener @)";
+            this.lbErrorDireccion.AutoSize = true;
+            this.lbErrorDireccion.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorDireccion.Location = new System.Drawing.Point(87, 403);
+            this.lbErrorDireccion.Name = "lbErrorDireccion";
+            this.lbErrorDireccion.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorDireccion.TabIndex = 17;
+            this.lbErrorDireccion.TextChanged += new System.EventHandler(this.lbErrorDireccion_TextChanged);
             // 
-            // label9
+            // lbErrorNombre
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(79, 226);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "(formato XXXX-XXXX)";
+            this.lbErrorNombre.AutoSize = true;
+            this.lbErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorNombre.Location = new System.Drawing.Point(123, 137);
+            this.lbErrorNombre.Name = "lbErrorNombre";
+            this.lbErrorNombre.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorNombre.TabIndex = 16;
+            this.lbErrorNombre.TextChanged += new System.EventHandler(this.lbErrorNombre_TextChanged);
+            // 
+            // lbErrorCorreo
+            // 
+            this.lbErrorCorreo.AutoSize = true;
+            this.lbErrorCorreo.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorCorreo.Location = new System.Drawing.Point(126, 313);
+            this.lbErrorCorreo.Name = "lbErrorCorreo";
+            this.lbErrorCorreo.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorCorreo.TabIndex = 15;
+            this.lbErrorCorreo.TextChanged += new System.EventHandler(this.lbErrorCorreo_TextChanged);
+            // 
+            // lbErrortelefono
+            // 
+            this.lbErrortelefono.AutoSize = true;
+            this.lbErrortelefono.ForeColor = System.Drawing.Color.Red;
+            this.lbErrortelefono.Location = new System.Drawing.Point(79, 226);
+            this.lbErrortelefono.Name = "lbErrortelefono";
+            this.lbErrortelefono.Size = new System.Drawing.Size(0, 16);
+            this.lbErrortelefono.TabIndex = 14;
+            this.lbErrortelefono.TextChanged += new System.EventHandler(this.lbErrortelefono_TextChanged);
             // 
             // btnEliminar
             // 
@@ -151,6 +176,7 @@
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(612, 22);
             this.txtDireccion.TabIndex = 10;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // label7
             // 
@@ -169,6 +195,7 @@
             this.txtCorreoElectro.Name = "txtCorreoElectro";
             this.txtCorreoElectro.Size = new System.Drawing.Size(616, 22);
             this.txtCorreoElectro.TabIndex = 8;
+            this.txtCorreoElectro.TextChanged += new System.EventHandler(this.txtCorreoElectro_TextChanged);
             // 
             // label6
             // 
@@ -187,6 +214,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(616, 22);
             this.txtTelefono.TabIndex = 6;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // label5
             // 
@@ -205,6 +233,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(619, 22);
             this.txtNombre.TabIndex = 4;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label4
             // 
@@ -272,6 +301,7 @@
             this.btnExportar.TabIndex = 5;
             this.btnExportar.Text = "Exportar a Excel";
             this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // label11
             // 
@@ -369,10 +399,12 @@
         private System.Windows.Forms.Button btnBuscador;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbErrorCorreo;
+        private System.Windows.Forms.Label lbErrortelefono;
         private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.Label lbErrorDireccion;
+        private System.Windows.Forms.Label lbErrorNombre;
     }
 }
