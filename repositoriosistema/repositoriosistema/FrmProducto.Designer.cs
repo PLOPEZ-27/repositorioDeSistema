@@ -49,6 +49,10 @@
             this.btnBuscador = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.lbErrorNombre = new System.Windows.Forms.Label();
+            this.lbErrorCategoria = new System.Windows.Forms.Label();
+            this.lbErrorPrecio = new System.Windows.Forms.Label();
+            this.lbErrorStock = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -57,6 +61,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.lbErrorStock);
+            this.panel1.Controls.Add(this.lbErrorPrecio);
+            this.panel1.Controls.Add(this.lbErrorCategoria);
+            this.panel1.Controls.Add(this.lbErrorNombre);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -116,6 +124,7 @@
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(547, 22);
             this.txtStock.TabIndex = 10;
+            this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
             // label6
             // 
@@ -134,6 +143,7 @@
             this.txtPrecioVenta.Name = "txtPrecioVenta";
             this.txtPrecioVenta.Size = new System.Drawing.Size(548, 22);
             this.txtPrecioVenta.TabIndex = 8;
+            this.txtPrecioVenta.TextChanged += new System.EventHandler(this.txtPrecioVenta_TextChanged);
             // 
             // label5
             // 
@@ -148,10 +158,11 @@
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(24, 300);
+            this.txtCategoria.Location = new System.Drawing.Point(27, 308);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(552, 22);
             this.txtCategoria.TabIndex = 6;
+            this.txtCategoria.TextChanged += new System.EventHandler(this.txtCategoria_TextChanged);
             // 
             // label4
             // 
@@ -170,6 +181,7 @@
             this.txtNombreProduc.Name = "txtNombreProduc";
             this.txtNombreProduc.Size = new System.Drawing.Size(556, 22);
             this.txtNombreProduc.TabIndex = 4;
+            this.txtNombreProduc.TextChanged += new System.EventHandler(this.txtNombreProduc_TextChanged);
             // 
             // label3
             // 
@@ -234,6 +246,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Exportar a Excel";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dgvProductos
             // 
@@ -275,6 +288,42 @@
             this.label7.Size = new System.Drawing.Size(145, 24);
             this.label7.TabIndex = 0;
             this.label7.Text = "Lista de Producto";
+            // 
+            // lbErrorNombre
+            // 
+            this.lbErrorNombre.AutoSize = true;
+            this.lbErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorNombre.Location = new System.Drawing.Point(142, 160);
+            this.lbErrorNombre.Name = "lbErrorNombre";
+            this.lbErrorNombre.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorNombre.TabIndex = 14;
+            // 
+            // lbErrorCategoria
+            // 
+            this.lbErrorCategoria.AutoSize = true;
+            this.lbErrorCategoria.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorCategoria.Location = new System.Drawing.Point(87, 254);
+            this.lbErrorCategoria.Name = "lbErrorCategoria";
+            this.lbErrorCategoria.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorCategoria.TabIndex = 15;
+            // 
+            // lbErrorPrecio
+            // 
+            this.lbErrorPrecio.AutoSize = true;
+            this.lbErrorPrecio.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorPrecio.Location = new System.Drawing.Point(122, 360);
+            this.lbErrorPrecio.Name = "lbErrorPrecio";
+            this.lbErrorPrecio.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorPrecio.TabIndex = 16;
+            // 
+            // lbErrorStock
+            // 
+            this.lbErrorStock.AutoSize = true;
+            this.lbErrorStock.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorStock.Location = new System.Drawing.Point(107, 466);
+            this.lbErrorStock.Name = "lbErrorStock";
+            this.lbErrorStock.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorStock.TabIndex = 17;
             // 
             // FrmProducto
             // 
@@ -320,5 +369,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.Label lbErrorStock;
+        private System.Windows.Forms.Label lbErrorPrecio;
+        private System.Windows.Forms.Label lbErrorCategoria;
+        private System.Windows.Forms.Label lbErrorNombre;
     }
 }

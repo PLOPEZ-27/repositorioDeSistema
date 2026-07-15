@@ -137,9 +137,13 @@ namespace repositoriosistema
 
         private void lbErrorNombre_TextChanged(object sender, EventArgs e)
         {
-            if(txtNombre.Text.Length < 5)
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
-                lbErrorNombre.Text = "el nombre debe de tener minimo 5 carecteres";
+                lbErrorNombre.Text = "No dejar vacío";
+            }
+            else if (txtNombre.Text.Length < 5)
+            {
+                lbErrorNombre.Text = "El nombre debe de tener mínimo 5 caracteres";
             }
             else
             {
@@ -149,15 +153,19 @@ namespace repositoriosistema
 
         private void lbErrortelefono_TextChanged(object sender, EventArgs e)
         {
-            if (txtTelefono.Text.Length <= 8)
+            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
             {
-                lbErrortelefono.Text = "el numero de telefono tiene que tenemer minimo 8 digitos";
+                lbErrortelefono.Text = "No dejar vacío";
+            }
+            else if (txtTelefono.Text.Length < 8)
+            {
+                lbErrortelefono.Text = "El Telefono debe de tener mínimo 8 caracteres";
             }
             else
             {
                 lbErrortelefono.Text = "";
             }
-               
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -167,9 +175,13 @@ namespace repositoriosistema
 
         private void lbErrorCorreo_TextChanged(object sender, EventArgs e)
         {
-            if (txtCorreoElectro.Text.Length > 0)
+            if (string.IsNullOrWhiteSpace(txtCorreoElectro.Text))
             {
-                lbErrorCorreo.Text = "el correo electronico no puede estar vacio";
+                lbErrorCorreo.Text = "No dejar vacío";
+            }
+            else if (txtCorreoElectro.Text.Length < 100)
+            {
+                lbErrorCorreo.Text = "El Correo electronico no puede quedar vacio";
             }
             else
             {
@@ -179,9 +191,13 @@ namespace repositoriosistema
 
         private void lbErrorDireccion_TextChanged(object sender, EventArgs e)
         {
-            if(txtDireccion.Text.Length > 0)
+            if (string.IsNullOrWhiteSpace(txtDireccion.Text))
             {
-                lbErrorDireccion.Text = "La direccion no puede estar vacia";
+                lbErrorDireccion.Text = "No dejar vacío";
+            }
+            else if (txtDireccion.Text.Length < 100)
+            {
+                lbErrorDireccion.Text = "La Direccion no puede quedar vacio";
             }
             else
             {
@@ -228,9 +244,13 @@ namespace repositoriosistema
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length < 5)
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
-                lbErrorNombre.Text = "el nombre debe de tener minimo 5 carecteres";
+                lbErrorNombre.Text = "No dejar vacío";
+            }
+            else if (txtNombre.Text.Length < 5)
+            {
+                lbErrorNombre.Text = "El nombre debe de tener mínimo 5 caracteres";
             }
             else
             {
@@ -240,21 +260,29 @@ namespace repositoriosistema
 
         private void txtTelefono_TextChanged(object sender, EventArgs e)
         {
-           if(txtTelefono.Text.Length < 8)
-           {
-                lbErrortelefono.Text = "El numero de telefono debe tener minimo 8 caracteres";
-           }
-           else
-           {
+            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                lbErrortelefono.Text = "No dejar vacío";
+            }
+            else if (txtTelefono.Text.Length < 8)
+            {
+                lbErrortelefono.Text = "El Telefono debe de tener mínimo 8 caracteres";
+            }
+            else
+            {
                 lbErrortelefono.Text = "";
-           }
+            }
         }
 
         private void txtCorreoElectro_TextChanged(object sender, EventArgs e)
         {
-            if(txtCorreoElectro.Text.Length < 100)
+            if (string.IsNullOrWhiteSpace(txtCorreoElectro.Text))
             {
-                lbErrorCorreo.Text = "El Correo Electronico no puede estar vacio, completar";
+                lbErrorCorreo.Text = "No dejar vacío";
+            }
+            else if (txtCorreoElectro.Text.Length < 100)
+            {
+                lbErrorCorreo.Text = "El Correo electronico no puede quedar vacio";
             }
             else
             {
@@ -264,9 +292,13 @@ namespace repositoriosistema
         
         private void txtDireccion_TextChanged(object sender, EventArgs e)
         {
-            if (txtDireccion.Text.Length < 100)
+            if (string.IsNullOrWhiteSpace(txtDireccion.Text))
             {
-                lbErrorDireccion.Text = "La Direccion no puede estar vacio, completar";
+                lbErrorDireccion.Text = "No dejar vacío";
+            }
+            else if (txtDireccion.Text.Length < 100)
+            {
+                lbErrorDireccion.Text = "La Direccion no puede quedar vacio";
             }
             else
             {

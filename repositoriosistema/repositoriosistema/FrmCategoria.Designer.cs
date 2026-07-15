@@ -30,11 +30,13 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.dgvCategoria = new System.Windows.Forms.DataGridView();
             this.btnBuscador = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbErrorDescrip = new System.Windows.Forms.Label();
+            this.lbErrorNombre = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -44,7 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.dgvProductos);
+            this.panel2.Controls.Add(this.dgvCategoria);
             this.panel2.Controls.Add(this.btnBuscador);
             this.panel2.Controls.Add(this.txtBuscar);
             this.panel2.Controls.Add(this.label7);
@@ -71,16 +73,18 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Exportar a Excel";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // dgvProductos
+            // dgvCategoria
             // 
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(19, 120);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.RowHeadersWidth = 51;
-            this.dgvProductos.RowTemplate.Height = 24;
-            this.dgvProductos.Size = new System.Drawing.Size(644, 265);
-            this.dgvProductos.TabIndex = 3;
+            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategoria.Location = new System.Drawing.Point(19, 120);
+            this.dgvCategoria.Name = "dgvCategoria";
+            this.dgvCategoria.RowHeadersWidth = 51;
+            this.dgvCategoria.RowTemplate.Height = 24;
+            this.dgvCategoria.Size = new System.Drawing.Size(644, 265);
+            this.dgvCategoria.TabIndex = 3;
+            this.dgvCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // btnBuscador
             // 
@@ -99,6 +103,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(503, 22);
             this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label7
             // 
@@ -114,6 +119,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.lbErrorDescrip);
+            this.panel1.Controls.Add(this.lbErrorNombre);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -126,6 +133,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(588, 657);
             this.panel1.TabIndex = 2;
+            // 
+            // lbErrorDescrip
+            // 
+            this.lbErrorDescrip.AutoSize = true;
+            this.lbErrorDescrip.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorDescrip.Location = new System.Drawing.Point(225, 217);
+            this.lbErrorDescrip.Name = "lbErrorDescrip";
+            this.lbErrorDescrip.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorDescrip.TabIndex = 15;
+            // 
+            // lbErrorNombre
+            // 
+            this.lbErrorNombre.AutoSize = true;
+            this.lbErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorNombre.Location = new System.Drawing.Point(223, 95);
+            this.lbErrorNombre.Name = "lbErrorNombre";
+            this.lbErrorNombre.Size = new System.Drawing.Size(0, 16);
+            this.lbErrorNombre.TabIndex = 14;
             // 
             // btnEliminar
             // 
@@ -148,6 +173,7 @@
             this.btnEditar.TabIndex = 12;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnGuardar
             // 
@@ -167,6 +193,7 @@
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(552, 22);
             this.txtdescripcion.TabIndex = 6;
+            this.txtdescripcion.TextChanged += new System.EventHandler(this.txtdescripcion_TextChanged);
             // 
             // label4
             // 
@@ -185,6 +212,7 @@
             this.txtNombreProduc.Name = "txtNombreProduc";
             this.txtNombreProduc.Size = new System.Drawing.Size(556, 22);
             this.txtNombreProduc.TabIndex = 4;
+            this.txtNombreProduc.TextChanged += new System.EventHandler(this.txtNombreProduc_TextChanged);
             // 
             // label3
             // 
@@ -215,12 +243,14 @@
             this.ClientSize = new System.Drawing.Size(1371, 795);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCategoria";
             this.Text = "FrmCategoria";
+            this.Load += new System.EventHandler(this.FrmCategoria_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -231,7 +261,7 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.DataGridView dgvCategoria;
         private System.Windows.Forms.Button btnBuscador;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label7;
@@ -244,5 +274,7 @@
         private System.Windows.Forms.TextBox txtNombreProduc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbErrorNombre;
+        private System.Windows.Forms.Label lbErrorDescrip;
     }
 }

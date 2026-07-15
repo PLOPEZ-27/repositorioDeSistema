@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using ClosedXML.Excel;
+using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Pqc.Crypto.Frodo;
 using System;
 using System.Collections.Generic;
@@ -25,8 +26,8 @@ namespace repositoriosistema
             string error = "";
             if (txtNombreProduc.Text == string.Empty)
                 error += "Error. El campo de Nombre esta vacio, complete";
-            else if (txtNombreProduc.Text.Length < 3)
-                error += "\nError. Tener como minimo 3 caractereres, completar";
+            else if (txtNombreProduc.Text.Length < 5)
+                error += "\nError. Tener como minimo 5 caractereres, completar";
             if (txtCategoria.Text == string.Empty)
                 error += "\nError. el campo de categoria esta vacio, complete";
             if (txtPrecioVenta.Text == string.Empty)
@@ -123,6 +124,107 @@ namespace repositoriosistema
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             CargarProductos(txtBuscar.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (dgvProductos.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay datos para exportar");
+                return;
+            }
+            SaveFileDialog guardar = new SaveFileDialog();
+            guardar.Filter = "Archivos de Excel (*.xlsx)|*.xlsx";
+            guardar.FileName = "Clientes.xlsx";
+
+            if (guardar.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    XLWorkbook libro = new XLWorkbook();
+
+                    //Crear Hoja
+                    var Hoja = libro.Worksheets.Add("Clientes");
+
+                    DataTable tabla = (DataTable)dgvProductos.DataSource;
+
+                    Hoja.Cell(1, 1).InsertTable(tabla);
+
+                    //Guardar el archivo
+                    libro.SaveAs(guardar.FileName);
+                    MessageBox.Show("Se exporto exitosamente el archivo.");
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al exportar: " + ex.Message);
+                }
+            }
+        }
+
+        private void txtNombreProduc_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtNombreProduc.Text))
+            {
+                lbErrorNombre.Text = "No dejar vacío";
+            }
+            else if (txtNombreProduc.Text.Length < 5)
+            {
+                lbErrorNombre.Text = "El nombre debe de tener mínimo 5 caracteres";
+            }
+            else
+            {
+                lbErrorNombre.Text = "";
+            }
+        }
+
+        private void txtCategoria_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCategoria.Text))
+            {
+                lbErrorCategoria.Text = "No dejar vacío";
+            }
+            else if (txtCategoria.Text.Length < 100)
+            {
+                lbErrorCategoria.Text = "La categoria no puede quedar vacia";
+            }
+            else
+            {
+                lbErrorCategoria.Text = "";
+            }
+        }
+
+        private void txtPrecioVenta_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPrecioVenta.Text))
+            {
+                lbErrorPrecio.Text = "No dejar vacío";
+            }
+            else if (txtPrecioVenta.Text.Length < 100)
+            {
+                lbErrorPrecio.Text = "el precio no puede quedar vacio";
+            }
+            else
+            {
+                lbErrorPrecio.Text = "";
+            }
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtStock.Text))
+            {
+                lbErrorStock.Text = "No dejar vacío";
+            }
+            else if (txtStock.Text.Length < 100)
+            {
+                lbErrorStock.Text = "El stock no puede quedar vacio";
+            }
+            else
+            {
+                lbErrorStock.Text = "";
+            }
         }
     }
 }
